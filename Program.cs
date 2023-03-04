@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddDbContext<Rest>(options => 
+builder.Services.AddDbContext<restauranteContext>(options => 
   options.UseSqlServer(builder.Configuration.GetConnectionString("restauranteDbConnection")));
 
 
